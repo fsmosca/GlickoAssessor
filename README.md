@@ -52,7 +52,7 @@ meltwater.print_rating()
 
 You can query the rating table of db.
 ```python
-for row in meltwater.query(f"select * from rating"):
+for row in meltwater.query("select * from rating"):
     print(row)
     
 (1, 'Giri, Anish', 2705, 44, 0.05992012388069119, 15, 8.0)
@@ -70,7 +70,7 @@ That is id, name, rating, ratingdeviation, volatility, games, points
 
 Or see the contents of pgn table to see which pgn files were already considered in the rating calculation.
 ```python
-for row in meltwater.query(f"select * from pgn"):
+for row in meltwater.query("select * from pgn"):
     print(row)
     
 (1, '1-skillingopp20.pgn')
